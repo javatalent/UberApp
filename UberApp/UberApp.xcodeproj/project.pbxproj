@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		556D75E422C89B9A0089926F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D75E322C89B9A0089926F /* AppDelegate.swift */; };
+		556D75E622C89B9A0089926F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D75E522C89B9A0089926F /* ViewController.swift */; };
+		556D75EB22C89B9B0089926F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556D75EA22C89B9B0089926F /* Assets.xcassets */; };
+		556D75EE22C89B9B0089926F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556D75EC22C89B9B0089926F /* LaunchScreen.storyboard */; };
+		556D760B22C89C990089926F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D760A22C89C990089926F /* Constants.swift */; };
+		556D761022C89CFD0089926F /* FlickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D760F22C89CFD0089926F /* FlickerService.swift */; };
+		556D761222C89D1E0089926F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D761122C89D1E0089926F /* HttpClient.swift */; };
+		556D761422C89D480089926F /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D761322C89D480089926F /* CacheManager.swift */; };
+		556D761622C89D8F0089926F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D761522C89D8F0089926F /* ImageDownloader.swift */; };
+		556D761B22C8A8930089926F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D761A22C8A8930089926F /* Photo.swift */; };
+		556D761D22C8A8A00089926F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D761C22C8A8A00089926F /* PhotoModel.swift */; };
+		556D761F22C8A8AC0089926F /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D761E22C8A8AC0089926F /* Photos.swift */; };
+		556D762222C8A8F60089926F /* FlickrPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D762122C8A8F60089926F /* FlickrPhotosViewController.swift */; };
+		556D762622C8A92F0089926F /* CustomReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D762522C8A92F0089926F /* CustomReusableView.swift */; };
+		556D762822C8A93F0089926F /* CustomReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556D762722C8A93F0089926F /* CustomReusableView.xib */; };
+		556D762A22C8A94B0089926F /* FlickerPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D762922C8A94B0089926F /* FlickerPhotosCollectionViewCell.swift */; };
+		556D762C22C8A9630089926F /* FlickerPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D762B22C8A9630089926F /* FlickerPhotosDataSource.swift */; };
+		556D762E22C8A98F0089926F /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D762D22C8A98F0089926F /* Container.swift */; };
+		556D763022C8A9BB0089926F /* FlickerPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D762F22C8A9BB0089926F /* FlickerPhotosViewModel.swift */; };
+		556D763222C8A9CE0089926F /* FlickerPhotosCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D763122C8A9CE0089926F /* FlickerPhotosCellViewModel.swift */; };
+		556D763422C8AA230089926F /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D763322C8AA230089926F /* ImageViewExtension.swift */; };
+		556D763622C8AA540089926F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556D763522C8AA540089926F /* Main.storyboard */; };
+		556D763C22C8AA730089926F /* rose.json in Resources */ = {isa = PBXBuildFile; fileRef = 556D763822C8AA730089926F /* rose.json */; };
+		556D763D22C8AA730089926F /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 556D763922C8AA730089926F /* test.jpeg */; };
+		556D763E22C8AA730089926F /* rose2.json in Resources */ = {isa = PBXBuildFile; fileRef = 556D763A22C8AA730089926F /* rose2.json */; };
+		556D763F22C8AA730089926F /* rose1.json in Resources */ = {isa = PBXBuildFile; fileRef = 556D763B22C8AA730089926F /* rose1.json */; };
+		556D764122C8AADA0089926F /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D764022C8AADA0089926F /* ImageDownloaderTests.swift */; };
+		556D764322C8AB200089926F /* FlickerPhotosDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D764222C8AB200089926F /* FlickerPhotosDataSourceTests.swift */; };
+		556D764522C8AB410089926F /* FlickerPhotosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D764422C8AB410089926F /* FlickerPhotosViewModelTests.swift */; };
+		556D764722C8AB620089926F /* FlickerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D764622C8AB620089926F /* FlickerServiceTests.swift */; };
+		556D764922C8AB7F0089926F /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D764822C8AB7F0089926F /* HttpClientTests.swift */; };
+		556D764B22C8ABA50089926F /* FlickerPhotosCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D764A22C8ABA50089926F /* FlickerPhotosCellViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		556D75F522C89B9C0089926F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556D75D822C89B9A0089926F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556D75DF22C89B9A0089926F;
+			remoteInfo = UberApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		556D75E022C89B9A0089926F /* UberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556D75E322C89B9A0089926F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		556D75E522C89B9A0089926F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		556D75EA22C89B9B0089926F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		556D75ED22C89B9B0089926F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		556D75EF22C89B9B0089926F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556D75F422C89B9C0089926F /* UberAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		556D75FA22C89B9C0089926F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556D760A22C89C990089926F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		556D760F22C89CFD0089926F /* FlickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerService.swift; sourceTree = "<group>"; };
+		556D761122C89D1E0089926F /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		556D761322C89D480089926F /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		556D761522C89D8F0089926F /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		556D761A22C8A8930089926F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		556D761C22C8A8A00089926F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		556D761E22C8A8AC0089926F /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		556D762122C8A8F60089926F /* FlickrPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosViewController.swift; sourceTree = "<group>"; };
+		556D762522C8A92F0089926F /* CustomReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomReusableView.swift; sourceTree = "<group>"; };
+		556D762722C8A93F0089926F /* CustomReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomReusableView.xib; sourceTree = "<group>"; };
+		556D762922C8A94B0089926F /* FlickerPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		556D762B22C8A9630089926F /* FlickerPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosDataSource.swift; sourceTree = "<group>"; };
+		556D762D22C8A98F0089926F /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		556D762F22C8A9BB0089926F /* FlickerPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosViewModel.swift; sourceTree = "<group>"; };
+		556D763122C8A9CE0089926F /* FlickerPhotosCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosCellViewModel.swift; sourceTree = "<group>"; };
+		556D763322C8AA230089926F /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		556D763522C8AA540089926F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		556D763822C8AA730089926F /* rose.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rose.json; sourceTree = "<group>"; };
+		556D763922C8AA730089926F /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		556D763A22C8AA730089926F /* rose2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rose2.json; sourceTree = "<group>"; };
+		556D763B22C8AA730089926F /* rose1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rose1.json; sourceTree = "<group>"; };
+		556D764022C8AADA0089926F /* ImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderTests.swift; sourceTree = "<group>"; };
+		556D764222C8AB200089926F /* FlickerPhotosDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosDataSourceTests.swift; sourceTree = "<group>"; };
+		556D764422C8AB410089926F /* FlickerPhotosViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosViewModelTests.swift; sourceTree = "<group>"; };
+		556D764622C8AB620089926F /* FlickerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerServiceTests.swift; sourceTree = "<group>"; };
+		556D764822C8AB7F0089926F /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
+		556D764A22C8ABA50089926F /* FlickerPhotosCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotosCellViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		556D75DD22C89B9A0089926F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556D75F122C89B9C0089926F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556D75D722C89B9A0089926F = {
+			isa = PBXGroup;
+			children = (
+				556D75E222C89B9A0089926F /* UberApp */,
+				556D75F722C89B9C0089926F /* UberAppTests */,
+				556D75E122C89B9A0089926F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		556D75E122C89B9A0089926F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556D75E022C89B9A0089926F /* UberApp.app */,
+				556D75F422C89B9C0089926F /* UberAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556D75E222C89B9A0089926F /* UberApp */ = {
+			isa = PBXGroup;
+			children = (
+				556D760322C89BAB0089926F /* Constants */,
+				556D760822C89C400089926F /* Container */,
+				556D760722C89BF20089926F /* AppDelegate */,
+				556D760622C89BE80089926F /* Storyboard */,
+				556D760522C89BDD0089926F /* MVVM */,
+				556D760422C89BBB0089926F /* DataLayer */,
+				556D75E322C89B9A0089926F /* AppDelegate.swift */,
+				556D75E522C89B9A0089926F /* ViewController.swift */,
+				556D75EA22C89B9B0089926F /* Assets.xcassets */,
+				556D75EC22C89B9B0089926F /* LaunchScreen.storyboard */,
+				556D75EF22C89B9B0089926F /* Info.plist */,
+			);
+			path = UberApp;
+			sourceTree = "<group>";
+		};
+		556D75F722C89B9C0089926F /* UberAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				556D763722C8AA730089926F /* MockData */,
+				556D75FA22C89B9C0089926F /* Info.plist */,
+				556D764022C8AADA0089926F /* ImageDownloaderTests.swift */,
+				556D764222C8AB200089926F /* FlickerPhotosDataSourceTests.swift */,
+				556D764422C8AB410089926F /* FlickerPhotosViewModelTests.swift */,
+				556D764622C8AB620089926F /* FlickerServiceTests.swift */,
+				556D764822C8AB7F0089926F /* HttpClientTests.swift */,
+				556D764A22C8ABA50089926F /* FlickerPhotosCellViewModelTests.swift */,
+			);
+			path = UberAppTests;
+			sourceTree = "<group>";
+		};
+		556D760322C89BAB0089926F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				556D760A22C89C990089926F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		556D760422C89BBB0089926F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				556D760E22C89CEE0089926F /* Services */,
+				556D760D22C89CE50089926F /* Network */,
+				556D760C22C89CC90089926F /* ImageDownloader */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		556D760522C89BDD0089926F /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				556D761922C8A8740089926F /* Model */,
+				556D761822C8A86B0089926F /* View */,
+				556D761722C8A85F0089926F /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		556D760622C89BE80089926F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				556D763522C8AA540089926F /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		556D760722C89BF20089926F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		556D760822C89C400089926F /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				556D762D22C8A98F0089926F /* Container.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		556D760C22C89CC90089926F /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				556D761322C89D480089926F /* CacheManager.swift */,
+				556D761522C89D8F0089926F /* ImageDownloader.swift */,
+				556D763322C8AA230089926F /* ImageViewExtension.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		556D760D22C89CE50089926F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				556D761122C89D1E0089926F /* HttpClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		556D760E22C89CEE0089926F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				556D760F22C89CFD0089926F /* FlickerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		556D761722C8A85F0089926F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				556D762F22C8A9BB0089926F /* FlickerPhotosViewModel.swift */,
+				556D763122C8A9CE0089926F /* FlickerPhotosCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		556D761822C8A86B0089926F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556D762422C8A9180089926F /* DataSource */,
+				556D762322C8A90E0089926F /* Cells */,
+				556D762022C8A8E90089926F /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556D761922C8A8740089926F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556D761A22C8A8930089926F /* Photo.swift */,
+				556D761C22C8A8A00089926F /* PhotoModel.swift */,
+				556D761E22C8A8AC0089926F /* Photos.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		556D762022C8A8E90089926F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				556D762122C8A8F60089926F /* FlickrPhotosViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		556D762322C8A90E0089926F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				556D762522C8A92F0089926F /* CustomReusableView.swift */,
+				556D762722C8A93F0089926F /* CustomReusableView.xib */,
+				556D762922C8A94B0089926F /* FlickerPhotosCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		556D762422C8A9180089926F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				556D762B22C8A9630089926F /* FlickerPhotosDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		556D763722C8AA730089926F /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				556D763822C8AA730089926F /* rose.json */,
+				556D763922C8AA730089926F /* test.jpeg */,
+				556D763A22C8AA730089926F /* rose2.json */,
+				556D763B22C8AA730089926F /* rose1.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		556D75DF22C89B9A0089926F /* UberApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556D75FD22C89B9C0089926F /* Build configuration list for PBXNativeTarget "UberApp" */;
+			buildPhases = (
+				556D75DC22C89B9A0089926F /* Sources */,
+				556D75DD22C89B9A0089926F /* Frameworks */,
+				556D75DE22C89B9A0089926F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberApp;
+			productName = UberApp;
+			productReference = 556D75E022C89B9A0089926F /* UberApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		556D75F322C89B9C0089926F /* UberAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556D760022C89B9C0089926F /* Build configuration list for PBXNativeTarget "UberAppTests" */;
+			buildPhases = (
+				556D75F022C89B9C0089926F /* Sources */,
+				556D75F122C89B9C0089926F /* Frameworks */,
+				556D75F222C89B9C0089926F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556D75F622C89B9C0089926F /* PBXTargetDependency */,
+			);
+			name = UberAppTests;
+			productName = UberAppTests;
+			productReference = 556D75F422C89B9C0089926F /* UberAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		556D75D822C89B9A0089926F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Kushal;
+				TargetAttributes = {
+					556D75DF22C89B9A0089926F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					556D75F322C89B9C0089926F = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 556D75DF22C89B9A0089926F;
+					};
+				};
+			};
+			buildConfigurationList = 556D75DB22C89B9A0089926F /* Build configuration list for PBXProject "UberApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 556D75D722C89B9A0089926F;
+			productRefGroup = 556D75E122C89B9A0089926F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				556D75DF22C89B9A0089926F /* UberApp */,
+				556D75F322C89B9C0089926F /* UberAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		556D75DE22C89B9A0089926F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556D762822C8A93F0089926F /* CustomReusableView.xib in Resources */,
+				556D75EE22C89B9B0089926F /* LaunchScreen.storyboard in Resources */,
+				556D75EB22C89B9B0089926F /* Assets.xcassets in Resources */,
+				556D763622C8AA540089926F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556D75F222C89B9C0089926F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556D763F22C8AA730089926F /* rose1.json in Resources */,
+				556D763E22C8AA730089926F /* rose2.json in Resources */,
+				556D763C22C8AA730089926F /* rose.json in Resources */,
+				556D763D22C8AA730089926F /* test.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		556D75DC22C89B9A0089926F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556D763022C8A9BB0089926F /* FlickerPhotosViewModel.swift in Sources */,
+				556D761D22C8A8A00089926F /* PhotoModel.swift in Sources */,
+				556D761B22C8A8930089926F /* Photo.swift in Sources */,
+				556D763222C8A9CE0089926F /* FlickerPhotosCellViewModel.swift in Sources */,
+				556D763422C8AA230089926F /* ImageViewExtension.swift in Sources */,
+				556D761222C89D1E0089926F /* HttpClient.swift in Sources */,
+				556D761022C89CFD0089926F /* FlickerService.swift in Sources */,
+				556D761622C89D8F0089926F /* ImageDownloader.swift in Sources */,
+				556D762222C8A8F60089926F /* FlickrPhotosViewController.swift in Sources */,
+				556D75E622C89B9A0089926F /* ViewController.swift in Sources */,
+				556D762E22C8A98F0089926F /* Container.swift in Sources */,
+				556D75E422C89B9A0089926F /* AppDelegate.swift in Sources */,
+				556D762622C8A92F0089926F /* CustomReusableView.swift in Sources */,
+				556D762A22C8A94B0089926F /* FlickerPhotosCollectionViewCell.swift in Sources */,
+				556D761422C89D480089926F /* CacheManager.swift in Sources */,
+				556D761F22C8A8AC0089926F /* Photos.swift in Sources */,
+				556D762C22C8A9630089926F /* FlickerPhotosDataSource.swift in Sources */,
+				556D760B22C89C990089926F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556D75F022C89B9C0089926F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556D764B22C8ABA50089926F /* FlickerPhotosCellViewModelTests.swift in Sources */,
+				556D764722C8AB620089926F /* FlickerServiceTests.swift in Sources */,
+				556D764322C8AB200089926F /* FlickerPhotosDataSourceTests.swift in Sources */,
+				556D764922C8AB7F0089926F /* HttpClientTests.swift in Sources */,
+				556D764122C8AADA0089926F /* ImageDownloaderTests.swift in Sources */,
+				556D764522C8AB410089926F /* FlickerPhotosViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		556D75F622C89B9C0089926F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556D75DF22C89B9A0089926F /* UberApp */;
+			targetProxy = 556D75F522C89B9C0089926F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		556D75EC22C89B9B0089926F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556D75ED22C89B9B0089926F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		556D75FB22C89B9C0089926F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		556D75FC22C89B9C0089926F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		556D75FE22C89B9C0089926F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W359358PM2;
+				INFOPLIST_FILE = UberApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kushal.UberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		556D75FF22C89B9C0089926F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W359358PM2;
+				INFOPLIST_FILE = UberApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kushal.UberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		556D760122C89B9C0089926F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W359358PM2;
+				INFOPLIST_FILE = UberAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kushal.UberAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberApp.app/UberApp";
+			};
+			name = Debug;
+		};
+		556D760222C89B9C0089926F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W359358PM2;
+				INFOPLIST_FILE = UberAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kushal.UberAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberApp.app/UberApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556D75DB22C89B9A0089926F /* Build configuration list for PBXProject "UberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556D75FB22C89B9C0089926F /* Debug */,
+				556D75FC22C89B9C0089926F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556D75FD22C89B9C0089926F /* Build configuration list for PBXNativeTarget "UberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556D75FE22C89B9C0089926F /* Debug */,
+				556D75FF22C89B9C0089926F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556D760022C89B9C0089926F /* Build configuration list for PBXNativeTarget "UberAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556D760122C89B9C0089926F /* Debug */,
+				556D760222C89B9C0089926F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556D75D822C89B9A0089926F /* Project object */;
+}
